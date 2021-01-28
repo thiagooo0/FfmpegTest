@@ -1,0 +1,14 @@
+prefix=/Users/kwoksiuwang/Code/ffmpeg/android/x86
+exec_prefix=${prefix}
+libdir=/Users/kwoksiuwang/Code/ffmpeg/android/libs/x86
+includedir=/Users/kwoksiuwang/Code/ffmpeg/android/x86/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.63.101
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

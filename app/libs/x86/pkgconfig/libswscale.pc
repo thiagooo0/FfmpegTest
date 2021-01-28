@@ -1,0 +1,14 @@
+prefix=/Users/kwoksiuwang/Code/ffmpeg/android/x86
+exec_prefix=${prefix}
+libdir=/Users/kwoksiuwang/Code/ffmpeg/android/libs/x86
+includedir=/Users/kwoksiuwang/Code/ffmpeg/android/x86/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.8.100
+Requires: 
+Requires.private: libavutil >= 56.63.101
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}

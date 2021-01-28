@@ -1,0 +1,14 @@
+prefix=/Users/kwoksiuwang/Code/ffmpeg-4.3/android/arm64-v8a
+exec_prefix=${prefix}
+libdir=/Users/kwoksiuwang/Code/ffmpeg-4.3/android/libs/arm64-v8a
+includedir=/Users/kwoksiuwang/Code/ffmpeg-4.3/android/arm64-v8a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.64.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
