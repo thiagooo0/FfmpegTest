@@ -1,2 +1,2 @@
-include ':app'
+include ':app','camera_mic_codec'
 rootProject.name = "FfmpegTest"
